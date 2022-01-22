@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */; };
-		A77A478F279C0E8B006BD5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A478E279C0E8B006BD5A2 /* Assets.xcassets */; };
 		A77A4792279C0E8B006BD5A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */; };
 		A77A4799279C15BC006BD5A2 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */; };
 		A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A479B279C169A006BD5A2 /* ColorPalette.swift */; };
@@ -16,10 +15,6 @@
 		A77A47B5279C2B12006BD5A2 /* AddStakeholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47B4279C2B12006BD5A2 /* AddStakeholderView.swift */; };
 		A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47B6279C2B21006BD5A2 /* AddStakeholderViewModel.swift */; };
 		A77A47BB279C2ECF006BD5A2 /* StyleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47BA279C2ECF006BD5A2 /* StyleTextField.swift */; };
-		A77A47C2279C520D006BD5A2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A77A47C1279C520D006BD5A2 /* Lottie */; };
-		A77A47C4279C520D006BD5A2 /* _LottieCore in Frameworks */ = {isa = PBXBuildFile; productRef = A77A47C3279C520D006BD5A2 /* _LottieCore */; };
-		A77A47C7279C5317006BD5A2 /* savedLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = A77A47C6279C5317006BD5A2 /* savedLottie.json */; };
-		A77A47CB279C536D006BD5A2 /* SavedLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47CA279C536D006BD5A2 /* SavedLottieView.swift */; };
 		A77A47D2279C6BDA006BD5A2 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47D1279C6BDA006BD5A2 /* Project.swift */; };
 		A77A47D7279C6DCA006BD5A2 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47D6279C6DCA006BD5A2 /* AddProjectView.swift */; };
 		A77A47D9279C6DE0006BD5A2 /* AddProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47D8279C6DE0006BD5A2 /* AddProjectViewModel.swift */; };
@@ -27,12 +22,17 @@
 		A77A47E3279C995E006BD5A2 /* TabNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47E2279C995E006BD5A2 /* TabNames.swift */; };
 		A77A47E5279C99B0006BD5A2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47E4279C99B0006BD5A2 /* TabBarView.swift */; };
 		A77A47E7279C99EA006BD5A2 /* TabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47E6279C99EA006BD5A2 /* TabBarExtension.swift */; };
+		A77A47EA279CA10F006BD5A2 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47E9279CA10F006BD5A2 /* DashboardView.swift */; };
+		A77A47EC279CA1B2006BD5A2 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47EB279CA1B2006BD5A2 /* DashboardViewModel.swift */; };
+		A77A47EE279CA9BD006BD5A2 /* DashboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47ED279CA9BD006BD5A2 /* DashboardItem.swift */; };
+		A77A47F2279CB1D0006BD5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A47F1279CB1D0006BD5A2 /* Assets.xcassets */; };
+		A77A47FB279CB303006BD5A2 /* LaunchScreen-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = A77A47FA279CB303006BD5A2 /* LaunchScreen-logo.gif */; };
+		A77A47FC279CB422006BD5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77A47F6279CB2B1006BD5A2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A77A4787279C0E88006BD5A2 /* Superwoman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superwoman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperwomanApp.swift; sourceTree = "<group>"; };
-		A77A478E279C0E8B006BD5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
 		A77A479B279C169A006BD5A2 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
@@ -40,8 +40,6 @@
 		A77A47B4279C2B12006BD5A2 /* AddStakeholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStakeholderView.swift; sourceTree = "<group>"; };
 		A77A47B6279C2B21006BD5A2 /* AddStakeholderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStakeholderViewModel.swift; sourceTree = "<group>"; };
 		A77A47BA279C2ECF006BD5A2 /* StyleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTextField.swift; sourceTree = "<group>"; };
-		A77A47C6279C5317006BD5A2 /* savedLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = savedLottie.json; sourceTree = "<group>"; };
-		A77A47CA279C536D006BD5A2 /* SavedLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLottieView.swift; sourceTree = "<group>"; };
 		A77A47D1279C6BDA006BD5A2 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		A77A47D6279C6DCA006BD5A2 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
 		A77A47D8279C6DE0006BD5A2 /* AddProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewModel.swift; sourceTree = "<group>"; };
@@ -49,6 +47,12 @@
 		A77A47E2279C995E006BD5A2 /* TabNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNames.swift; sourceTree = "<group>"; };
 		A77A47E4279C99B0006BD5A2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		A77A47E6279C99EA006BD5A2 /* TabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarExtension.swift; sourceTree = "<group>"; };
+		A77A47E9279CA10F006BD5A2 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A77A47EB279CA1B2006BD5A2 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		A77A47ED279CA9BD006BD5A2 /* DashboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardItem.swift; sourceTree = "<group>"; };
+		A77A47F1279CB1D0006BD5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../../Downloads/AppIcons (3)/Assets.xcassets"; sourceTree = "<group>"; };
+		A77A47F6279CB2B1006BD5A2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A77A47FA279CB303006BD5A2 /* LaunchScreen-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "LaunchScreen-logo.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A77A47C4279C520D006BD5A2 /* _LottieCore in Frameworks */,
-				A77A47C2279C520D006BD5A2 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +85,8 @@
 		A77A4789279C0E88006BD5A2 /* Superwoman */ = {
 			isa = PBXGroup;
 			children = (
+				A77A47F5279CB2B1006BD5A2 /* LaunchScreen */,
 				A77A47E0279C991F006BD5A2 /* Assets */,
-				A77A47C5279C5242006BD5A2 /* Lottie */,
 				A77A47B2279C2AF2006BD5A2 /* Scenes */,
 				A77A479D279C1741006BD5A2 /* Entities */,
 				A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */,
@@ -132,6 +134,7 @@
 		A77A47B2279C2AF2006BD5A2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A77A47E8279CA0F0006BD5A2 /* Dashboard */,
 				A77A47E1279C9945006BD5A2 /* TabBar */,
 				A77A47D5279C6DB4006BD5A2 /* Project */,
 				A77A47B3279C2AF8006BD5A2 /* Stakeholder */,
@@ -148,23 +151,6 @@
 			path = Stakeholder;
 			sourceTree = "<group>";
 		};
-		A77A47C5279C5242006BD5A2 /* Lottie */ = {
-			isa = PBXGroup;
-			children = (
-				A77A47C9279C534B006BD5A2 /* SaveAnimation */,
-			);
-			path = Lottie;
-			sourceTree = "<group>";
-		};
-		A77A47C9279C534B006BD5A2 /* SaveAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				A77A47C6279C5317006BD5A2 /* savedLottie.json */,
-				A77A47CA279C536D006BD5A2 /* SavedLottieView.swift */,
-			);
-			path = SaveAnimation;
-			sourceTree = "<group>";
-		};
 		A77A47D5279C6DB4006BD5A2 /* Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,8 +164,8 @@
 		A77A47E0279C991F006BD5A2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A77A47F1279CB1D0006BD5A2 /* Assets.xcassets */,
 				A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */,
-				A77A478E279C0E8B006BD5A2 /* Assets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -191,6 +177,25 @@
 				A77A47E4279C99B0006BD5A2 /* TabBarView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A77A47E8279CA0F0006BD5A2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A77A47E9279CA10F006BD5A2 /* DashboardView.swift */,
+				A77A47EB279CA1B2006BD5A2 /* DashboardViewModel.swift */,
+				A77A47ED279CA9BD006BD5A2 /* DashboardItem.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A77A47F5279CB2B1006BD5A2 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A77A47FA279CB303006BD5A2 /* LaunchScreen-logo.gif */,
+				A77A47F6279CB2B1006BD5A2 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +215,6 @@
 			);
 			name = Superwoman;
 			packageProductDependencies = (
-				A77A47C1279C520D006BD5A2 /* Lottie */,
-				A77A47C3279C520D006BD5A2 /* _LottieCore */,
 			);
 			productName = Superwoman;
 			productReference = A77A4787279C0E88006BD5A2 /* Superwoman.app */;
@@ -242,7 +245,6 @@
 			);
 			mainGroup = A77A477E279C0E88006BD5A2;
 			packageReferences = (
-				A77A47C0279C520D006BD5A2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = A77A4788279C0E88006BD5A2 /* Products */;
 			projectDirPath = "";
@@ -258,10 +260,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A77A47C7279C5317006BD5A2 /* savedLottie.json in Resources */,
 				A77A4799279C15BC006BD5A2 /* ColorAsset.xcassets in Resources */,
 				A77A4792279C0E8B006BD5A2 /* Preview Assets.xcassets in Resources */,
-				A77A478F279C0E8B006BD5A2 /* Assets.xcassets in Resources */,
+				A77A47FB279CB303006BD5A2 /* LaunchScreen-logo.gif in Resources */,
+				A77A47FC279CB422006BD5A2 /* LaunchScreen.storyboard in Resources */,
+				A77A47F2279CB1D0006BD5A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,13 +281,15 @@
 				A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */,
 				A77A47D9279C6DE0006BD5A2 /* AddProjectViewModel.swift in Sources */,
 				A77A479F279C1781006BD5A2 /* Stakeholder.swift in Sources */,
+				A77A47EE279CA9BD006BD5A2 /* DashboardItem.swift in Sources */,
 				A77A47B5279C2B12006BD5A2 /* AddStakeholderView.swift in Sources */,
+				A77A47EC279CA1B2006BD5A2 /* DashboardViewModel.swift in Sources */,
+				A77A47EA279CA10F006BD5A2 /* DashboardView.swift in Sources */,
 				A77A47BB279C2ECF006BD5A2 /* StyleTextField.swift in Sources */,
 				A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */,
 				A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */,
 				A77A47DD279C70EC006BD5A2 /* ImagePicker.swift in Sources */,
 				A77A47E7279C99EA006BD5A2 /* TabBarExtension.swift in Sources */,
-				A77A47CB279C536D006BD5A2 /* SavedLottieView.swift in Sources */,
 				A77A47D2279C6BDA006BD5A2 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -398,6 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -422,6 +429,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -452,6 +460,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -490,30 +499,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A77A47C0279C520D006BD5A2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A77A47C1279C520D006BD5A2 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A77A47C0279C520D006BD5A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-		A77A47C3279C520D006BD5A2 /* _LottieCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A77A47C0279C520D006BD5A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = _LottieCore;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A77A477F279C0E88006BD5A2 /* Project object */;
 }
