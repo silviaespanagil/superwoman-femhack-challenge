@@ -22,6 +22,9 @@
 		A77A47C7279C5317006BD5A2 /* savedLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = A77A47C6279C5317006BD5A2 /* savedLottie.json */; };
 		A77A47CB279C536D006BD5A2 /* SavedLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47CA279C536D006BD5A2 /* SavedLottieView.swift */; };
 		A77A47D2279C6BDA006BD5A2 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47D1279C6BDA006BD5A2 /* Project.swift */; };
+		A77A47D7279C6DCA006BD5A2 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47D6279C6DCA006BD5A2 /* AddProjectView.swift */; };
+		A77A47D9279C6DE0006BD5A2 /* AddProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47D8279C6DE0006BD5A2 /* AddProjectViewModel.swift */; };
+		A77A47DD279C70EC006BD5A2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47DC279C70EC006BD5A2 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		A77A47C6279C5317006BD5A2 /* savedLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = savedLottie.json; sourceTree = "<group>"; };
 		A77A47CA279C536D006BD5A2 /* SavedLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLottieView.swift; sourceTree = "<group>"; };
 		A77A47D1279C6BDA006BD5A2 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		A77A47D6279C6DCA006BD5A2 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
+		A77A47D8279C6DE0006BD5A2 /* AddProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewModel.swift; sourceTree = "<group>"; };
+		A77A47DC279C70EC006BD5A2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 		A77A47B2279C2AF2006BD5A2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A77A47D5279C6DB4006BD5A2 /* Project */,
 				A77A47B3279C2AF8006BD5A2 /* Stakeholder */,
 			);
 			path = Scenes;
@@ -152,6 +159,16 @@
 				A77A47CA279C536D006BD5A2 /* SavedLottieView.swift */,
 			);
 			path = SaveAnimation;
+			sourceTree = "<group>";
+		};
+		A77A47D5279C6DB4006BD5A2 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				A77A47D6279C6DCA006BD5A2 /* AddProjectView.swift */,
+				A77A47D8279C6DE0006BD5A2 /* AddProjectViewModel.swift */,
+				A77A47DC279C70EC006BD5A2 /* ImagePicker.swift */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,13 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77A47D7279C6DCA006BD5A2 /* AddProjectView.swift in Sources */,
 				A77A478D279C0E88006BD5A2 /* ContentView.swift in Sources */,
 				A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */,
+				A77A47D9279C6DE0006BD5A2 /* AddProjectViewModel.swift in Sources */,
 				A77A479F279C1781006BD5A2 /* Stakeholder.swift in Sources */,
 				A77A47B5279C2B12006BD5A2 /* AddStakeholderView.swift in Sources */,
 				A77A47BB279C2ECF006BD5A2 /* StyleTextField.swift in Sources */,
 				A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */,
 				A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */,
+				A77A47DD279C70EC006BD5A2 /* ImagePicker.swift in Sources */,
 				A77A47CB279C536D006BD5A2 /* SavedLottieView.swift in Sources */,
 				A77A47D2279C6BDA006BD5A2 /* Project.swift in Sources */,
 			);
