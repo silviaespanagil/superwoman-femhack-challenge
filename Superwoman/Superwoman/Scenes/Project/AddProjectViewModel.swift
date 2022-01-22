@@ -40,7 +40,7 @@ class AddProjectViewModel: ObservableObject {
     let cancelSystemName = "person.crop.circle.badge.exclamationmark"
     
     let alertTitle = "Project is not valid"
-    let alertText = "Please check the websote is right and that the budget is a valid number"
+    let alertText = "Please check the website is right and that the budget is a valid number"
     let alertDismiss = "Close"
     
     // Project array
