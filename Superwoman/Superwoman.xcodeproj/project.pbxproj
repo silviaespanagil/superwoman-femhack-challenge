@@ -11,6 +11,8 @@
 		A77A478D279C0E88006BD5A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A478C279C0E88006BD5A2 /* ContentView.swift */; };
 		A77A478F279C0E8B006BD5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A478E279C0E8B006BD5A2 /* Assets.xcassets */; };
 		A77A4792279C0E8B006BD5A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */; };
+		A77A4799279C15BC006BD5A2 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */; };
+		A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A479B279C169A006BD5A2 /* ColorPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A77A478C279C0E88006BD5A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A77A478E279C0E8B006BD5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
+		A77A479B279C169A006BD5A2 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 				A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */,
 				A77A478C279C0E88006BD5A2 /* ContentView.swift */,
 				A77A478E279C0E8B006BD5A2 /* Assets.xcassets */,
+				A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */,
+				A77A479A279C165F006BD5A2 /* Extensions */,
 				A77A4790279C0E8B006BD5A2 /* Preview Content */,
 			);
 			path = Superwoman;
@@ -65,6 +71,14 @@
 				A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A77A479A279C165F006BD5A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A77A479B279C169A006BD5A2 /* ColorPalette.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77A4799279C15BC006BD5A2 /* ColorAsset.xcassets in Resources */,
 				A77A4792279C0E8B006BD5A2 /* Preview Assets.xcassets in Resources */,
 				A77A478F279C0E8B006BD5A2 /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +154,7 @@
 			files = (
 				A77A478D279C0E88006BD5A2 /* ContentView.swift in Sources */,
 				A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */,
+				A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
