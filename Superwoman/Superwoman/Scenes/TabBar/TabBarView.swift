@@ -10,7 +10,6 @@ import SwiftUI
 struct TabBarView: View {
     
     @State var activeTab: TabNames = TabNames.dashboard
-    @Environment(\.colorScheme) var currentMode
     
     init() {
         
@@ -21,10 +20,15 @@ struct TabBarView: View {
         
         TabView(selection: $activeTab) {
             
-//Dashboard
+            DashboardView(viewModel: DashboardViewModel())
+                .tabItem {
+                    Image(systemName: "laptopcomputer")
+                    Text("My dashboard")
+                }
+                .tag(TabNames.dashboard)
             AddStakeholderView(viewModel: AddStakeholderViewModel())
                 .tabItem {
-                    Image(systemName: "folder.badge.person.crop")
+                    Image(systemName: "person.badge.plus")
                     Text("Add stakeholder")
                 }
                 .tag(TabNames.stakeholders)
