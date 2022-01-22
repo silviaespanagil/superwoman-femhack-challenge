@@ -23,6 +23,7 @@
 		A77A47B1279C2322006BD5A2 /* DBFundedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47B0279C2322006BD5A2 /* DBFundedProject.swift */; };
 		A77A47B5279C2B12006BD5A2 /* AddStakeholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47B4279C2B12006BD5A2 /* AddStakeholderView.swift */; };
 		A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47B6279C2B21006BD5A2 /* AddStakeholderViewModel.swift */; };
+		A77A47BB279C2ECF006BD5A2 /* StyleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47BA279C2ECF006BD5A2 /* StyleTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		A77A47B0279C2322006BD5A2 /* DBFundedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBFundedProject.swift; sourceTree = "<group>"; };
 		A77A47B4279C2B12006BD5A2 /* AddStakeholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStakeholderView.swift; sourceTree = "<group>"; };
 		A77A47B6279C2B21006BD5A2 /* AddStakeholderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStakeholderViewModel.swift; sourceTree = "<group>"; };
+		A77A47BA279C2ECF006BD5A2 /* StyleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A77A479B279C169A006BD5A2 /* ColorPalette.swift */,
+				A77A47BA279C2ECF006BD5A2 /* StyleTextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				A77A47A7279C1CB4006BD5A2 /* Persistence.swift in Sources */,
 				A77A47AF279C20AC006BD5A2 /* DBStakeholder.swift in Sources */,
 				A77A47B5279C2B12006BD5A2 /* AddStakeholderView.swift in Sources */,
+				A77A47BB279C2ECF006BD5A2 /* StyleTextField.swift in Sources */,
 				A77A47AB279C1FFE006BD5A2 /* DBManager.swift in Sources */,
 				A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */,
 				A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */,
