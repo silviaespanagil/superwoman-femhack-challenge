@@ -9,6 +9,6 @@ import Foundation
 
 struct FundedProject {
     
-    let id: Int
+    let id: UUID
     let name: String
 }

@@ -9,7 +9,7 @@ import Foundation
 
 struct Stakeholder: Identifiable {
 
-    let id: Int
+    let id: UUID
     let fullName: String
     let email: String
     let website: String
