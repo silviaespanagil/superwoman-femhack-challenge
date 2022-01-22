@@ -17,8 +17,6 @@ class AddStakeholderViewModel: ObservableObject {
     @Published var amountFunded: String = ""
     @Published var presentAlert = false
     
-    var saved = false
-    
     // View values
     let headerInfo = "Stakeholder info"
     let headerProjects = "Stakeholder projects"
@@ -50,16 +48,11 @@ class AddStakeholderViewModel: ObservableObject {
             presentAlert = false
             Stakeholders.append(Stakeholder(id: UUID(), fullName: fullName, email: email, website: website, fundedProjects: fundedProjects, fundedAmount: Double(amountFunded)!))
             
-            saved = true
             cleanValues()
         } else {
             
             presentAlert = true
         }
-    }
-    
-    func toggleSave() {
-        saved = false
     }
     
     func cleanValues() {
