@@ -83,7 +83,8 @@ struct AddStakeholderView: View {
                         .foregroundColor(.darkBlue)
                         .shadow(color: .lightBlue, radius: 3, x: 3, y: 3)
                         
-                    }}
+                    }
+                }
             }.foregroundColor(.peach)
                 .alert(isPresented: $viewModel.presentAlert) {
                     

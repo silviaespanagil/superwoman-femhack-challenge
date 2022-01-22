@@ -15,5 +15,6 @@ extension View {
             .padding(.vertical, 5)
             .foregroundColor(.darkBlue)
             .padding(5)
+            .autocapitalization(.none)
     }
 }
