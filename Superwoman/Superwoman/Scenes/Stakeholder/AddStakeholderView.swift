@@ -9,25 +9,21 @@ import SwiftUI
 
 struct AddStakeholderView: View {
     
-    @State var fullName: String = ""
-    @State var email: String = ""
-    @State var website: String = ""
-    @State var fundedProjects: [String] = [""]
-    @State var amountFunded: [String] = [""]
+    @StateObject var viewModel: AddStakeholderViewModel
     
     var body: some View {
         
         VStack {
             
             Form {
-                
+
                 Section(header: Text("Stakeholder info")) {
                     
-                    TextField("Fullname", text: $fullName)
+                    TextField(viewModel.fullnameLabel, text: $viewModel.fullName)
                         .styleTextField()
-                    TextField("eMail", text: $email)
+                    TextField(viewModel.emailLabel, text: $viewModel.email)
                         .styleTextField()
-                    TextField("Website", text: $website)
+                    TextField(viewModel.websiteLabel, text: $viewModel.website)
                         .styleTextField()
                 }
                 
@@ -35,57 +31,65 @@ struct AddStakeholderView: View {
                     
                     VStack(alignment: .leading) {
                         
-                        ForEach(fundedProjects.indices, id: \.self) { index in
+                        ForEach(viewModel.fundedProjects.indices, id: \.self) { index in
                             
-                            TextField("Funded project name", text: $fundedProjects[index])
+                            TextField("Funded project name", text: $viewModel.fundedProjects[index])
                                 .styleTextField()
                         }
                         Button(action: {
                             
-                            fundedProjects.append("")
+                            viewModel.fundedProjects.append("")
                         }) {
                             Image(systemName: "plus.circle")
                                 .foregroundColor(Color.peach)
                                 .padding(.leading, 5)
                         }
                     }
-                    TextField("Total amount funded in €", text: $email)
+                    TextField("Total amount funded in €", text: $viewModel.amountFunded)
                         .styleTextField()
                 }
+                
+                if !viewModel.formIsEmpty {
                 HStack {
                     
-                Button(action: {
-                            print("Save")
-                        }){
-                            Image(systemName: "person.crop.circle.badge.checkmark")
-                            Text("Save")
-                        }
-                        .padding()
-                        .buttonStyle(PlainButtonStyle())
-                        .foregroundColor(.darkBlue)
-                        .shadow(color: .lightBlue, radius: 3, x: 3, y: 3)
+                    Button(action: {
+                        
+                        viewModel.saveStakeholder()
+                    }){
+                        Image(systemName: "person.crop.circle.badge.checkmark")
+                        Text("Save")
+                    }
+                    .padding()
+                    .buttonStyle(PlainButtonStyle())
+                    .foregroundColor(.darkBlue)
+                    .shadow(color: .lightBlue, radius: 3, x: 3, y: 3)
                     
-                Spacer()
+                    Spacer()
                     
-                Button(action: {
-                                print("Cancel")
-                            }){
-                                Image(systemName: "person.crop.circle.badge.exclamationmark")
-                                Text("Cancel")
-                            }
-                            .padding()
-                            .buttonStyle(PlainButtonStyle())
-                            .foregroundColor(.darkBlue)
-                            .shadow(color: .lightBlue, radius: 3, x: 3, y: 3)
+                    Button(action: {
+                        viewModel.cleanValues()
+                    }){
+                        Image(systemName: "person.crop.circle.badge.exclamationmark")
+                        Text("Cancel")
+                    }
+                    .padding()
+                    .buttonStyle(PlainButtonStyle())
+                    .foregroundColor(.darkBlue)
+                    .shadow(color: .lightBlue, radius: 3, x: 3, y: 3)
                     
-                }
+                }}
             }.foregroundColor(.peach)
+                .alert(isPresented: $viewModel.presentAlert) {
+                    
+                    Alert(title: Text("eMail is not valid"), message: Text("Please check the mail and save again"), dismissButton: .default(Text("Okay"), action: {
+                    }))
+                }
         }
     }
 }
 
 struct AddStakeholderView_Previews: PreviewProvider {
     static var previews: some View {
-        AddStakeholderView()
+        AddStakeholderView(viewModel: AddStakeholderViewModel())
     }
 }
