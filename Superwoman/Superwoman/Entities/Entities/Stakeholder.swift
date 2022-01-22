@@ -13,24 +13,6 @@ struct Stakeholder: Identifiable {
     let fullName: String
     let email: String
     let website: String
-    let fundedProjects: [FundedProject]
+    let fundedProjects: [String]
     let fundedAmount: Int
-    
-    func getFundedProject() -> String {
-        
-        var result = ""
-        
-        for project in fundedProjects {
-            
-            result = "\(result), \(project.name)"
-        }
-        
-        if fundedProjects.count > 0 {
-        
-            result.remove(at: result.startIndex)
-            result.remove(at: result.startIndex)
-        }
-        
-        return result
-    }
 }
