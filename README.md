@@ -122,4 +122,4 @@ When an user creates a stakeholder, this stakeholder can have many "projects fun
 If you want to clone this repo please feel free to! 
 
 ## Codefactor
-[![CodeFactor](https://www.codefactor.io/repository/github/silviaespanagil/rick-and-morty-a-swiftui-app/badge)](https://www.codefactor.io/repository/github/silviaespanagil/rick-and-morty-a-swiftui-app)
+[![CodeFactor](https://www.codefactor.io/repository/github/silviaespanagil/superwoman-femhack-challenge/badge)](https://www.codefactor.io/repository/github/silviaespanagil/superwoman-femhack-challenge)
