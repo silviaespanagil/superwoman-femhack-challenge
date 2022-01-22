@@ -11,6 +11,6 @@ public extension Color {
     
     static let lightPink = Color("LightPink")
     static let lightBlue = Color("LightBlue")
-    static let coral = Color("Coral")
+    static let peach = Color("Peach")
     static let darkBlue = Color("DarkBlue")
 }
