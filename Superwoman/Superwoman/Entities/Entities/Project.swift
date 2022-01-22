@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Project: Identifiable {
 
@@ -13,7 +14,7 @@ struct Project: Identifiable {
     let projectName: String
     let website: String
     let description: String
-    let image: String
+    let image: UIImage
     let budget: Double
     let closindDate: Date
 }
