@@ -13,6 +13,8 @@
 		A77A4792279C0E8B006BD5A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */; };
 		A77A4799279C15BC006BD5A2 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */; };
 		A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A479B279C169A006BD5A2 /* ColorPalette.swift */; };
+		A77A479F279C1781006BD5A2 /* Stakeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A479E279C1781006BD5A2 /* Stakeholder.swift */; };
+		A77A47A1279C1869006BD5A2 /* FundedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47A0279C1869006BD5A2 /* FundedProject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
 		A77A479B279C169A006BD5A2 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		A77A479E279C1781006BD5A2 /* Stakeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stakeholder.swift; sourceTree = "<group>"; };
+		A77A47A0279C1869006BD5A2 /* FundedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundedProject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		A77A4789279C0E88006BD5A2 /* Superwoman */ = {
 			isa = PBXGroup;
 			children = (
+				A77A479D279C1741006BD5A2 /* Entities */,
 				A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */,
 				A77A478C279C0E88006BD5A2 /* ContentView.swift */,
 				A77A478E279C0E8B006BD5A2 /* Assets.xcassets */,
@@ -79,6 +84,15 @@
 				A77A479B279C169A006BD5A2 /* ColorPalette.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A77A479D279C1741006BD5A2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A77A479E279C1781006BD5A2 /* Stakeholder.swift */,
+				A77A47A0279C1869006BD5A2 /* FundedProject.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +168,9 @@
 			files = (
 				A77A478D279C0E88006BD5A2 /* ContentView.swift in Sources */,
 				A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */,
+				A77A479F279C1781006BD5A2 /* Stakeholder.swift in Sources */,
 				A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */,
+				A77A47A1279C1869006BD5A2 /* FundedProject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
