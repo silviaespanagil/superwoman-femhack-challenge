@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */; };
-		A77A478D279C0E88006BD5A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A478C279C0E88006BD5A2 /* ContentView.swift */; };
 		A77A478F279C0E8B006BD5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A478E279C0E8B006BD5A2 /* Assets.xcassets */; };
 		A77A4792279C0E8B006BD5A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */; };
 		A77A4799279C15BC006BD5A2 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */; };
@@ -25,12 +24,14 @@
 		A77A47D7279C6DCA006BD5A2 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47D6279C6DCA006BD5A2 /* AddProjectView.swift */; };
 		A77A47D9279C6DE0006BD5A2 /* AddProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47D8279C6DE0006BD5A2 /* AddProjectViewModel.swift */; };
 		A77A47DD279C70EC006BD5A2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47DC279C70EC006BD5A2 /* ImagePicker.swift */; };
+		A77A47E3279C995E006BD5A2 /* TabNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47E2279C995E006BD5A2 /* TabNames.swift */; };
+		A77A47E5279C99B0006BD5A2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47E4279C99B0006BD5A2 /* TabBarView.swift */; };
+		A77A47E7279C99EA006BD5A2 /* TabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47E6279C99EA006BD5A2 /* TabBarExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A77A4787279C0E88006BD5A2 /* Superwoman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superwoman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperwomanApp.swift; sourceTree = "<group>"; };
-		A77A478C279C0E88006BD5A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A77A478E279C0E8B006BD5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
@@ -45,6 +46,9 @@
 		A77A47D6279C6DCA006BD5A2 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
 		A77A47D8279C6DE0006BD5A2 /* AddProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewModel.swift; sourceTree = "<group>"; };
 		A77A47DC279C70EC006BD5A2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A77A47E2279C995E006BD5A2 /* TabNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNames.swift; sourceTree = "<group>"; };
+		A77A47E4279C99B0006BD5A2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		A77A47E6279C99EA006BD5A2 /* TabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +83,11 @@
 		A77A4789279C0E88006BD5A2 /* Superwoman */ = {
 			isa = PBXGroup;
 			children = (
+				A77A47E0279C991F006BD5A2 /* Assets */,
 				A77A47C5279C5242006BD5A2 /* Lottie */,
 				A77A47B2279C2AF2006BD5A2 /* Scenes */,
 				A77A479D279C1741006BD5A2 /* Entities */,
 				A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */,
-				A77A478C279C0E88006BD5A2 /* ContentView.swift */,
-				A77A478E279C0E8B006BD5A2 /* Assets.xcassets */,
-				A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */,
 				A77A479A279C165F006BD5A2 /* Extensions */,
 				A77A4790279C0E8B006BD5A2 /* Preview Content */,
 			);
@@ -105,6 +107,7 @@
 			children = (
 				A77A479B279C169A006BD5A2 /* ColorPalette.swift */,
 				A77A47BA279C2ECF006BD5A2 /* StyleTextField.swift */,
+				A77A47E6279C99EA006BD5A2 /* TabBarExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 		A77A47B2279C2AF2006BD5A2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A77A47E1279C9945006BD5A2 /* TabBar */,
 				A77A47D5279C6DB4006BD5A2 /* Project */,
 				A77A47B3279C2AF8006BD5A2 /* Stakeholder */,
 			);
@@ -169,6 +173,24 @@
 				A77A47DC279C70EC006BD5A2 /* ImagePicker.swift */,
 			);
 			path = Project;
+			sourceTree = "<group>";
+		};
+		A77A47E0279C991F006BD5A2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */,
+				A77A478E279C0E8B006BD5A2 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A77A47E1279C9945006BD5A2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A77A47E2279C995E006BD5A2 /* TabNames.swift */,
+				A77A47E4279C99B0006BD5A2 /* TabBarView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77A47E3279C995E006BD5A2 /* TabNames.swift in Sources */,
 				A77A47D7279C6DCA006BD5A2 /* AddProjectView.swift in Sources */,
-				A77A478D279C0E88006BD5A2 /* ContentView.swift in Sources */,
+				A77A47E5279C99B0006BD5A2 /* TabBarView.swift in Sources */,
 				A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */,
 				A77A47D9279C6DE0006BD5A2 /* AddProjectViewModel.swift in Sources */,
 				A77A479F279C1781006BD5A2 /* Stakeholder.swift in Sources */,
@@ -260,6 +283,7 @@
 				A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */,
 				A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */,
 				A77A47DD279C70EC006BD5A2 /* ImagePicker.swift in Sources */,
+				A77A47E7279C99EA006BD5A2 /* TabBarExtension.swift in Sources */,
 				A77A47CB279C536D006BD5A2 /* SavedLottieView.swift in Sources */,
 				A77A47D2279C6BDA006BD5A2 /* Project.swift in Sources */,
 			);

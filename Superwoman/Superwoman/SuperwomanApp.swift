@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SuperwomanApp: App {
+    
     var body: some Scene {
+        
         WindowGroup {
-            AddStakeholderView(viewModel: AddStakeholderViewModel())
+            
+            TabBarView()
         }
     }
 }
