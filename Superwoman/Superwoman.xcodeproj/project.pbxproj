@@ -14,16 +14,13 @@
 		A77A4799279C15BC006BD5A2 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */; };
 		A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A479B279C169A006BD5A2 /* ColorPalette.swift */; };
 		A77A479F279C1781006BD5A2 /* Stakeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A479E279C1781006BD5A2 /* Stakeholder.swift */; };
-		A77A47A1279C1869006BD5A2 /* FundedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47A0279C1869006BD5A2 /* FundedProject.swift */; };
-		A77A47A5279C1AA9006BD5A2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A77A47A3279C1AA9006BD5A2 /* Model.xcdatamodeld */; };
-		A77A47A7279C1CB4006BD5A2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47A6279C1CB4006BD5A2 /* Persistence.swift */; };
-		A77A47A9279C1D4C006BD5A2 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47A8279C1D4C006BD5A2 /* CoreDataStack.swift */; };
-		A77A47AB279C1FFE006BD5A2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47AA279C1FFE006BD5A2 /* DBManager.swift */; };
-		A77A47AF279C20AC006BD5A2 /* DBStakeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47AE279C20AC006BD5A2 /* DBStakeholder.swift */; };
-		A77A47B1279C2322006BD5A2 /* DBFundedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47B0279C2322006BD5A2 /* DBFundedProject.swift */; };
 		A77A47B5279C2B12006BD5A2 /* AddStakeholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47B4279C2B12006BD5A2 /* AddStakeholderView.swift */; };
 		A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47B6279C2B21006BD5A2 /* AddStakeholderViewModel.swift */; };
 		A77A47BB279C2ECF006BD5A2 /* StyleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47BA279C2ECF006BD5A2 /* StyleTextField.swift */; };
+		A77A47C2279C520D006BD5A2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A77A47C1279C520D006BD5A2 /* Lottie */; };
+		A77A47C4279C520D006BD5A2 /* _LottieCore in Frameworks */ = {isa = PBXBuildFile; productRef = A77A47C3279C520D006BD5A2 /* _LottieCore */; };
+		A77A47C7279C5317006BD5A2 /* savedLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = A77A47C6279C5317006BD5A2 /* savedLottie.json */; };
+		A77A47CB279C536D006BD5A2 /* SavedLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A47CA279C536D006BD5A2 /* SavedLottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,16 +32,11 @@
 		A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
 		A77A479B279C169A006BD5A2 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		A77A479E279C1781006BD5A2 /* Stakeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stakeholder.swift; sourceTree = "<group>"; };
-		A77A47A0279C1869006BD5A2 /* FundedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundedProject.swift; sourceTree = "<group>"; };
-		A77A47A4279C1AA9006BD5A2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		A77A47A6279C1CB4006BD5A2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		A77A47A8279C1D4C006BD5A2 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		A77A47AA279C1FFE006BD5A2 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
-		A77A47AE279C20AC006BD5A2 /* DBStakeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStakeholder.swift; sourceTree = "<group>"; };
-		A77A47B0279C2322006BD5A2 /* DBFundedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBFundedProject.swift; sourceTree = "<group>"; };
 		A77A47B4279C2B12006BD5A2 /* AddStakeholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStakeholderView.swift; sourceTree = "<group>"; };
 		A77A47B6279C2B21006BD5A2 /* AddStakeholderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStakeholderViewModel.swift; sourceTree = "<group>"; };
 		A77A47BA279C2ECF006BD5A2 /* StyleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTextField.swift; sourceTree = "<group>"; };
+		A77A47C6279C5317006BD5A2 /* savedLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = savedLottie.json; sourceTree = "<group>"; };
+		A77A47CA279C536D006BD5A2 /* SavedLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77A47C4279C520D006BD5A2 /* _LottieCore in Frameworks */,
+				A77A47C2279C520D006BD5A2 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +71,8 @@
 		A77A4789279C0E88006BD5A2 /* Superwoman */ = {
 			isa = PBXGroup;
 			children = (
+				A77A47C5279C5242006BD5A2 /* Lottie */,
 				A77A47B2279C2AF2006BD5A2 /* Scenes */,
-				A77A47A2279C1A8C006BD5A2 /* DataBase */,
 				A77A479D279C1741006BD5A2 /* Entities */,
 				A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */,
 				A77A478C279C0E88006BD5A2 /* ContentView.swift */,
@@ -110,39 +104,17 @@
 		A77A479D279C1741006BD5A2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				A77A47AD279C209A006BD5A2 /* DBEntities */,
 				A77A47AC279C2084006BD5A2 /* Entities */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		A77A47A2279C1A8C006BD5A2 /* DataBase */ = {
-			isa = PBXGroup;
-			children = (
-				A77A47A3279C1AA9006BD5A2 /* Model.xcdatamodeld */,
-				A77A47A6279C1CB4006BD5A2 /* Persistence.swift */,
-				A77A47A8279C1D4C006BD5A2 /* CoreDataStack.swift */,
-				A77A47AA279C1FFE006BD5A2 /* DBManager.swift */,
-			);
-			path = DataBase;
-			sourceTree = "<group>";
-		};
 		A77A47AC279C2084006BD5A2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				A77A47A0279C1869006BD5A2 /* FundedProject.swift */,
 				A77A479E279C1781006BD5A2 /* Stakeholder.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		A77A47AD279C209A006BD5A2 /* DBEntities */ = {
-			isa = PBXGroup;
-			children = (
-				A77A47AE279C20AC006BD5A2 /* DBStakeholder.swift */,
-				A77A47B0279C2322006BD5A2 /* DBFundedProject.swift */,
-			);
-			path = DBEntities;
 			sourceTree = "<group>";
 		};
 		A77A47B2279C2AF2006BD5A2 /* Scenes */ = {
@@ -162,6 +134,23 @@
 			path = Stakeholder;
 			sourceTree = "<group>";
 		};
+		A77A47C5279C5242006BD5A2 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				A77A47C9279C534B006BD5A2 /* SaveAnimation */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		A77A47C9279C534B006BD5A2 /* SaveAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A77A47C6279C5317006BD5A2 /* savedLottie.json */,
+				A77A47CA279C536D006BD5A2 /* SavedLottieView.swift */,
+			);
+			path = SaveAnimation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +167,10 @@
 			dependencies = (
 			);
 			name = Superwoman;
+			packageProductDependencies = (
+				A77A47C1279C520D006BD5A2 /* Lottie */,
+				A77A47C3279C520D006BD5A2 /* _LottieCore */,
+			);
 			productName = Superwoman;
 			productReference = A77A4787279C0E88006BD5A2 /* Superwoman.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +199,9 @@
 				Base,
 			);
 			mainGroup = A77A477E279C0E88006BD5A2;
+			packageReferences = (
+				A77A47C0279C520D006BD5A2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = A77A4788279C0E88006BD5A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -220,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77A47C7279C5317006BD5A2 /* savedLottie.json in Resources */,
 				A77A4799279C15BC006BD5A2 /* ColorAsset.xcassets in Resources */,
 				A77A4792279C0E8B006BD5A2 /* Preview Assets.xcassets in Resources */,
 				A77A478F279C0E8B006BD5A2 /* Assets.xcassets in Resources */,
@@ -236,17 +233,11 @@
 				A77A478D279C0E88006BD5A2 /* ContentView.swift in Sources */,
 				A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */,
 				A77A479F279C1781006BD5A2 /* Stakeholder.swift in Sources */,
-				A77A47A7279C1CB4006BD5A2 /* Persistence.swift in Sources */,
-				A77A47AF279C20AC006BD5A2 /* DBStakeholder.swift in Sources */,
 				A77A47B5279C2B12006BD5A2 /* AddStakeholderView.swift in Sources */,
 				A77A47BB279C2ECF006BD5A2 /* StyleTextField.swift in Sources */,
-				A77A47AB279C1FFE006BD5A2 /* DBManager.swift in Sources */,
 				A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */,
 				A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */,
-				A77A47A1279C1869006BD5A2 /* FundedProject.swift in Sources */,
-				A77A47B1279C2322006BD5A2 /* DBFundedProject.swift in Sources */,
-				A77A47A5279C1AA9006BD5A2 /* Model.xcdatamodeld in Sources */,
-				A77A47A9279C1D4C006BD5A2 /* CoreDataStack.swift in Sources */,
+				A77A47CB279C536D006BD5A2 /* SavedLottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,18 +443,29 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCVersionGroup section */
-		A77A47A3279C1AA9006BD5A2 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A77A47A4279C1AA9006BD5A2 /* Model.xcdatamodel */,
-			);
-			currentVersion = A77A47A4279C1AA9006BD5A2 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+/* Begin XCRemoteSwiftPackageReference section */
+		A77A47C0279C520D006BD5A2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
 		};
-/* End XCVersionGroup section */
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A77A47C1279C520D006BD5A2 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A77A47C0279C520D006BD5A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		A77A47C3279C520D006BD5A2 /* _LottieCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A77A47C0279C520D006BD5A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = _LottieCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A77A477F279C0E88006BD5A2 /* Project object */;
 }
