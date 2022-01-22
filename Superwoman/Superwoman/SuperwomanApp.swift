@@ -11,7 +11,7 @@ import SwiftUI
 struct SuperwomanApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AddStakeholderView()
         }
     }
 }
