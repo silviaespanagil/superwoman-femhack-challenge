@@ -16,72 +16,79 @@ struct AddStakeholderView: View {
         VStack {
             
             Form {
-
-                Section(header: Text("Stakeholder info")) {
+                
+                Section(header: Text(viewModel.headerInfo)) {
                     
                     TextField(viewModel.fullnameLabel, text: $viewModel.fullName)
                         .styleTextField()
+                        .disableAutocorrection(true)
                     TextField(viewModel.emailLabel, text: $viewModel.email)
                         .styleTextField()
+                        .disableAutocorrection(true)
                     TextField(viewModel.websiteLabel, text: $viewModel.website)
                         .styleTextField()
+                        .disableAutocorrection(true)
                 }
                 
-                Section(header: Text("Stakeholder projects")) {
+                Section(header: Text(viewModel.headerProjects)) {
                     
                     VStack(alignment: .leading) {
                         
                         ForEach(viewModel.fundedProjects.indices, id: \.self) { index in
                             
-                            TextField("Funded project name", text: $viewModel.fundedProjects[index])
+                            TextField(viewModel.fundedProjectLabel, text: $viewModel.fundedProjects[index])
                                 .styleTextField()
+                                .disableAutocorrection(true)
                         }
                         Button(action: {
                             
                             viewModel.fundedProjects.append("")
                         }) {
-                            Image(systemName: "plus.circle")
+                            Image(systemName: viewModel.addSystemName)
                                 .foregroundColor(Color.peach)
                                 .padding(.leading, 5)
                         }
                     }
-                    TextField("Total amount funded in €", text: $viewModel.amountFunded)
+                    TextField(viewModel.amountFundedLabel, text: $viewModel.amountFunded)
                         .styleTextField()
+                        .disableAutocorrection(true)
                 }
                 
                 if !viewModel.formIsEmpty {
-                HStack {
                     
-                    Button(action: {
+                    HStack {
                         
-                        viewModel.saveStakeholder()
-                    }){
-                        Image(systemName: "person.crop.circle.badge.checkmark")
-                        Text("Save")
-                    }
-                    .padding()
-                    .buttonStyle(PlainButtonStyle())
-                    .foregroundColor(.darkBlue)
-                    .shadow(color: .lightBlue, radius: 3, x: 3, y: 3)
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        viewModel.cleanValues()
-                    }){
-                        Image(systemName: "person.crop.circle.badge.exclamationmark")
-                        Text("Cancel")
-                    }
-                    .padding()
-                    .buttonStyle(PlainButtonStyle())
-                    .foregroundColor(.darkBlue)
-                    .shadow(color: .lightBlue, radius: 3, x: 3, y: 3)
-                    
-                }}
+                        Button(action: {
+                            
+                            viewModel.saveStakeholder()
+                        }){
+                            Image(systemName: viewModel.saveSystemName)
+                            Text(viewModel.saveButtonLabel)
+                        }
+                        .padding()
+                        .buttonStyle(PlainButtonStyle())
+                        .foregroundColor(.darkBlue)
+                        .shadow(color: .lightBlue, radius: 3, x: 3, y: 3)
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            viewModel.cleanValues()
+                        }){
+                            Image(systemName: viewModel.cancelSystemName)
+                            Text(viewModel.cancelButtonLabel)
+                        }
+                        .padding()
+                        .buttonStyle(PlainButtonStyle())
+                        .foregroundColor(.darkBlue)
+                        .shadow(color: .lightBlue, radius: 3, x: 3, y: 3)
+                        
+                    }}
             }.foregroundColor(.peach)
                 .alert(isPresented: $viewModel.presentAlert) {
                     
-                    Alert(title: Text("eMail is not valid"), message: Text("Please check the mail and save again"), dismissButton: .default(Text("Okay"), action: {
+                    Alert(title: Text(viewModel.alertTitle),
+                          message: Text(viewModel.alertText), dismissButton: .default(Text(viewModel.alertDismiss), action: {
                     }))
                 }
         }
