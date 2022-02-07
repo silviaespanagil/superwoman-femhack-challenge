@@ -13,6 +13,6 @@ struct Stakeholder: Identifiable {
     let fullName: String
     let email: String
     let website: String
-    let fundedProjects: [FundedProject]
+    let fundedProjects: [String]
     let fundedAmount: Double
 }
