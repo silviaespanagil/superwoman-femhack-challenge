@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G314" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DBFundedProject" representedClassName="DBFundedProject" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="stakeholder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBStakeholder" inverseName="fundedProject" inverseEntity="DBStakeholder"/>
+    </entity>
+    <entity name="DBStakeholder" representedClassName="DBStakeholder" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="fullName" optional="YES" attributeType="String"/>
+        <attribute name="fundedAmount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="website" optional="YES" attributeType="String"/>
+        <relationship name="fundedProject" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBFundedProject" inverseName="stakeholder" inverseEntity="DBFundedProject"/>
+    </entity>
+    <elements>
+        <element name="DBFundedProject" positionX="-54" positionY="0" width="128" height="74"/>
+        <element name="DBStakeholder" positionX="-63" positionY="-18" width="128" height="119"/>
+    </elements>
+</model>
