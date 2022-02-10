@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A76F92C727B14DA1003F7F9B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F92C227B14DA1003F7F9B /* CoreDataStack.swift */; };
+		A76F92C827B14DA1003F7F9B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F92C327B14DA1003F7F9B /* Persistence.swift */; };
+		A76F92C927B14DA1003F7F9B /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F92C427B14DA1003F7F9B /* DBManager.swift */; };
+		A76F92CA27B14DA1003F7F9B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A76F92C527B14DA1003F7F9B /* Model.xcdatamodeld */; };
+		A76F92CE27B14DB1003F7F9B /* DBFundedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F92CC27B14DB1003F7F9B /* DBFundedProject.swift */; };
+		A76F92CF27B14DB1003F7F9B /* DBStakeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F92CD27B14DB1003F7F9B /* DBStakeholder.swift */; };
+		A76F92D127B14F96003F7F9B /* FundedProjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F92D027B14F95003F7F9B /* FundedProjects.swift */; };
 		A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */; };
 		A77A4792279C0E8B006BD5A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */; };
 		A77A4799279C15BC006BD5A2 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A4798279C15BC006BD5A2 /* ColorAsset.xcassets */; };
@@ -31,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A76F92C227B14DA1003F7F9B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A76F92C327B14DA1003F7F9B /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A76F92C427B14DA1003F7F9B /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		A76F92C627B14DA1003F7F9B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A76F92CC27B14DB1003F7F9B /* DBFundedProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBFundedProject.swift; sourceTree = "<group>"; };
+		A76F92CD27B14DB1003F7F9B /* DBStakeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBStakeholder.swift; sourceTree = "<group>"; };
+		A76F92D027B14F95003F7F9B /* FundedProjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundedProjects.swift; sourceTree = "<group>"; };
 		A77A4787279C0E88006BD5A2 /* Superwoman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superwoman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperwomanApp.swift; sourceTree = "<group>"; };
 		A77A4791279C0E8B006BD5A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -66,6 +80,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A76F92C127B14DA1003F7F9B /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				A76F92C227B14DA1003F7F9B /* CoreDataStack.swift */,
+				A76F92C327B14DA1003F7F9B /* Persistence.swift */,
+				A76F92C427B14DA1003F7F9B /* DBManager.swift */,
+				A76F92C527B14DA1003F7F9B /* Model.xcdatamodeld */,
+			);
+			name = DataBase;
+			path = ../../../../DataBase;
+			sourceTree = "<group>";
+		};
+		A76F92CB27B14DB1003F7F9B /* DBEntities */ = {
+			isa = PBXGroup;
+			children = (
+				A76F92CC27B14DB1003F7F9B /* DBFundedProject.swift */,
+				A76F92CD27B14DB1003F7F9B /* DBStakeholder.swift */,
+			);
+			path = DBEntities;
+			sourceTree = "<group>";
+		};
 		A77A477E279C0E88006BD5A2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +120,7 @@
 		A77A4789279C0E88006BD5A2 /* Superwoman */ = {
 			isa = PBXGroup;
 			children = (
+				A76F92C127B14DA1003F7F9B /* DataBase */,
 				A77A47F5279CB2B1006BD5A2 /* LaunchScreen */,
 				A77A47E0279C991F006BD5A2 /* Assets */,
 				A77A47B2279C2AF2006BD5A2 /* Scenes */,
@@ -117,6 +153,7 @@
 		A77A479D279C1741006BD5A2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				A76F92CB27B14DB1003F7F9B /* DBEntities */,
 				A77A47AC279C2084006BD5A2 /* Entities */,
 			);
 			path = Entities;
@@ -125,6 +162,7 @@
 		A77A47AC279C2084006BD5A2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				A76F92D027B14F95003F7F9B /* FundedProjects.swift */,
 				A77A479E279C1781006BD5A2 /* Stakeholder.swift */,
 				A77A47D1279C6BDA006BD5A2 /* Project.swift */,
 			);
@@ -277,19 +315,26 @@
 			files = (
 				A77A47E3279C995E006BD5A2 /* TabNames.swift in Sources */,
 				A77A47D7279C6DCA006BD5A2 /* AddProjectView.swift in Sources */,
+				A76F92CE27B14DB1003F7F9B /* DBFundedProject.swift in Sources */,
 				A77A47E5279C99B0006BD5A2 /* TabBarView.swift in Sources */,
 				A77A478B279C0E88006BD5A2 /* SuperwomanApp.swift in Sources */,
+				A76F92D127B14F96003F7F9B /* FundedProjects.swift in Sources */,
 				A77A47D9279C6DE0006BD5A2 /* AddProjectViewModel.swift in Sources */,
 				A77A479F279C1781006BD5A2 /* Stakeholder.swift in Sources */,
 				A77A47EE279CA9BD006BD5A2 /* DashboardItem.swift in Sources */,
+				A76F92CA27B14DA1003F7F9B /* Model.xcdatamodeld in Sources */,
 				A77A47B5279C2B12006BD5A2 /* AddStakeholderView.swift in Sources */,
+				A76F92CF27B14DB1003F7F9B /* DBStakeholder.swift in Sources */,
 				A77A47EC279CA1B2006BD5A2 /* DashboardViewModel.swift in Sources */,
+				A76F92C827B14DA1003F7F9B /* Persistence.swift in Sources */,
 				A77A47EA279CA10F006BD5A2 /* DashboardView.swift in Sources */,
 				A77A47BB279C2ECF006BD5A2 /* StyleTextField.swift in Sources */,
 				A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */,
+				A76F92C727B14DA1003F7F9B /* CoreDataStack.swift in Sources */,
 				A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */,
 				A77A47DD279C70EC006BD5A2 /* ImagePicker.swift in Sources */,
 				A77A47E7279C99EA006BD5A2 /* TabBarExtension.swift in Sources */,
+				A76F92C927B14DA1003F7F9B /* DBManager.swift in Sources */,
 				A77A47D2279C6BDA006BD5A2 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +544,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A76F92C527B14DA1003F7F9B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A76F92C627B14DA1003F7F9B /* Model.xcdatamodel */,
+			);
+			currentVersion = A76F92C627B14DA1003F7F9B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A77A477F279C0E88006BD5A2 /* Project object */;
 }
