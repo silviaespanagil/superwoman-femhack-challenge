@@ -13,7 +13,8 @@ class AddStakeholderViewModel: ObservableObject {
     @Published var fullName: String = ""
     @Published var email: String = ""
     @Published var website: String = ""
-    @Published var fundedProjects: [String] = [""]
+    @Published var fundedProjectsStrings: [String] = [""]
+    @Published var fundedProjects: [FundedProject] = []
     @Published var amountFunded: String = ""
     @Published var presentAlert = false
     
@@ -39,14 +40,26 @@ class AddStakeholderViewModel: ObservableObject {
     
     
     // Stakeholders array
-    var Stakeholders: [Stakeholder] = []
+    var stakeholders: [Stakeholder] = []
+    
+    init() {
+        
+        let fundedProject = FundedProject(id: UUID(), name: "")
+        fundedProjects.append(fundedProject)
+    }
+    
     
     func saveStakeholder() {
         
         if isValidEmailAddress(email: email) && isValidAmount(amount: amountFunded) {
             
+            for (index, name) in fundedProjectsStrings.enumerated() {
+                fundedProjects[index].name = name
+            }
+            
             presentAlert = false
-            Stakeholders.append(Stakeholder(id: UUID(), fullName: fullName, email: email, website: website, fundedProjects: fundedProjects, fundedAmount: Double(amountFunded)!))
+            
+            stakeholders.append(Stakeholder(id: UUID(), fullName: fullName, email: email, website: website, fundedProjects: fundedProjects, fundedAmount: Double(amountFunded)!))
             
             cleanValues()
         } else {
@@ -60,10 +73,21 @@ class AddStakeholderViewModel: ObservableObject {
         fullName = ""
         email = ""
         website = ""
-        fundedProjects = [""]
+        fundedProjects = []
+        fundedProjectsStrings = [""]
         amountFunded = ""
+        let fundedProject = FundedProject(id: UUID(), name: "")
+        fundedProjects.append(fundedProject)
+
     }
     
+    func addFundedProject() {
+        
+        let fundedProject = FundedProject(id: UUID(), name: "")
+        fundedProjects.append(fundedProject)
+        fundedProjectsStrings.append("")
+    }
+
     var formIsEmpty: Bool {
         
         fullName.isEmpty || email.isEmpty || website.isEmpty || fundedProjects.isEmpty || amountFunded.isEmpty

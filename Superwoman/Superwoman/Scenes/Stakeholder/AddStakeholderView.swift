@@ -34,15 +34,15 @@ struct AddStakeholderView: View {
                     
                     VStack(alignment: .leading) {
                         
-                        ForEach(viewModel.fundedProjects.indices, id: \.self) { index in
+                        ForEach(viewModel.fundedProjectsStrings.indices, id: \.self) { index in
                             
-                            TextField(viewModel.fundedProjectLabel, text: $viewModel.fundedProjects[index])
+                            TextField(viewModel.fundedProjectLabel, text: $viewModel.fundedProjectsStrings[index])
                                 .styleTextField()
                                 .disableAutocorrection(true)
                         }
                         Button(action: {
                             
-                            viewModel.fundedProjects.append("")
+                            viewModel.addFundedProject()
                         }) {
                             Image(systemName: viewModel.addSystemName)
                                 .foregroundColor(Color.peach)
