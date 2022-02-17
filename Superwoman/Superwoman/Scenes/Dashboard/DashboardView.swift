@@ -18,20 +18,20 @@ struct DashboardView: View {
             Text("Welcome to your dashboard")
                 .font(.title)
                 .foregroundColor(Color.peach)
-         
-            Text("Soon you will be able to see all this information here")
-                .font(.footnote)
-                .foregroundColor(Color.darkBlue)
             
             LazyVGrid(columns: viewModel.columns, spacing: viewModel.spacing) {
                 
-                DashboardItem(text: "Funded projects")
-                DashboardItem(text: "Total of stakeholders")
-                DashboardItem(text: "Money raised")
-                DashboardItem(text: "Average funds")
+                DashboardItem(text: "Funded projects", value: "")
+                DashboardItem(text: "Total of stakeholders", value: String(viewModel.stakeholders.count))
+                DashboardItem(text: "Money raised", value: "")
+                DashboardItem(text: "Average funds", value: "")
             }
      
         }.padding(.horizontal)
+            .onAppear {
+                
+                viewModel.getStakeholders()
+            }
     }
 }
 
