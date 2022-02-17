@@ -73,6 +73,7 @@ struct AddStakeholderView: View {
                         Spacer()
                         
                         Button(action: {
+                            viewModel.saveStakeholder()
                             viewModel.cleanValues()
                         }){
                             Image(systemName: viewModel.cancelSystemName)
