@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A71EB63227BD59C300F474A0 /* LocalStakeholderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71EB63127BD59C300F474A0 /* LocalStakeholderDataSource.swift */; };
+		A71EB63427BD5A8C00F474A0 /* StakeholderRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71EB63327BD5A8C00F474A0 /* StakeholderRepositoryImplementation.swift */; };
+		A71EB63627BD5AB200F474A0 /* StakeholderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71EB63527BD5AB200F474A0 /* StakeholderRepository.swift */; };
+		A71EB63927BD5CEE00F474A0 /* SaveStakeholderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71EB63827BD5CEE00F474A0 /* SaveStakeholderUseCase.swift */; };
+		A71EB63B27BD5D3C00F474A0 /* GetStakeholdersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71EB63A27BD5D3C00F474A0 /* GetStakeholdersUseCase.swift */; };
 		A76F92C727B14DA1003F7F9B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F92C227B14DA1003F7F9B /* CoreDataStack.swift */; };
 		A76F92C827B14DA1003F7F9B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F92C327B14DA1003F7F9B /* Persistence.swift */; };
 		A76F92C927B14DA1003F7F9B /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F92C427B14DA1003F7F9B /* DBManager.swift */; };
@@ -38,6 +43,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A71EB63127BD59C300F474A0 /* LocalStakeholderDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStakeholderDataSource.swift; sourceTree = "<group>"; };
+		A71EB63327BD5A8C00F474A0 /* StakeholderRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeholderRepositoryImplementation.swift; sourceTree = "<group>"; };
+		A71EB63527BD5AB200F474A0 /* StakeholderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakeholderRepository.swift; sourceTree = "<group>"; };
+		A71EB63827BD5CEE00F474A0 /* SaveStakeholderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveStakeholderUseCase.swift; sourceTree = "<group>"; };
+		A71EB63A27BD5D3C00F474A0 /* GetStakeholdersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStakeholdersUseCase.swift; sourceTree = "<group>"; };
 		A76F92C227B14DA1003F7F9B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A76F92C327B14DA1003F7F9B /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A76F92C427B14DA1003F7F9B /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
@@ -80,6 +90,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A71EB62E27BD576C00F474A0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A71EB63127BD59C300F474A0 /* LocalStakeholderDataSource.swift */,
+				A71EB63327BD5A8C00F474A0 /* StakeholderRepositoryImplementation.swift */,
+				A71EB63527BD5AB200F474A0 /* StakeholderRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A71EB63727BD5CDD00F474A0 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A71EB63827BD5CEE00F474A0 /* SaveStakeholderUseCase.swift */,
+				A71EB63A27BD5D3C00F474A0 /* GetStakeholdersUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		A76F92C127B14DA1003F7F9B /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,14 +149,16 @@
 		A77A4789279C0E88006BD5A2 /* Superwoman */ = {
 			isa = PBXGroup;
 			children = (
-				A76F92C127B14DA1003F7F9B /* DataBase */,
-				A77A47F5279CB2B1006BD5A2 /* LaunchScreen */,
+				A71EB63727BD5CDD00F474A0 /* UseCases */,
 				A77A47E0279C991F006BD5A2 /* Assets */,
-				A77A47B2279C2AF2006BD5A2 /* Scenes */,
+				A76F92C127B14DA1003F7F9B /* DataBase */,
 				A77A479D279C1741006BD5A2 /* Entities */,
-				A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */,
 				A77A479A279C165F006BD5A2 /* Extensions */,
+				A77A47F5279CB2B1006BD5A2 /* LaunchScreen */,
+				A71EB62E27BD576C00F474A0 /* Repositories */,
+				A77A47B2279C2AF2006BD5A2 /* Scenes */,
 				A77A4790279C0E8B006BD5A2 /* Preview Content */,
+				A77A478A279C0E88006BD5A2 /* SuperwomanApp.swift */,
 			);
 			path = Superwoman;
 			sourceTree = "<group>";
@@ -323,17 +354,22 @@
 				A77A479F279C1781006BD5A2 /* Stakeholder.swift in Sources */,
 				A77A47EE279CA9BD006BD5A2 /* DashboardItem.swift in Sources */,
 				A76F92CA27B14DA1003F7F9B /* Model.xcdatamodeld in Sources */,
+				A71EB63627BD5AB200F474A0 /* StakeholderRepository.swift in Sources */,
 				A77A47B5279C2B12006BD5A2 /* AddStakeholderView.swift in Sources */,
 				A76F92CF27B14DB1003F7F9B /* DBStakeholder.swift in Sources */,
 				A77A47EC279CA1B2006BD5A2 /* DashboardViewModel.swift in Sources */,
 				A76F92C827B14DA1003F7F9B /* Persistence.swift in Sources */,
+				A71EB63927BD5CEE00F474A0 /* SaveStakeholderUseCase.swift in Sources */,
+				A71EB63227BD59C300F474A0 /* LocalStakeholderDataSource.swift in Sources */,
 				A77A47EA279CA10F006BD5A2 /* DashboardView.swift in Sources */,
 				A77A47BB279C2ECF006BD5A2 /* StyleTextField.swift in Sources */,
 				A77A479C279C169A006BD5A2 /* ColorPalette.swift in Sources */,
+				A71EB63427BD5A8C00F474A0 /* StakeholderRepositoryImplementation.swift in Sources */,
 				A76F92C727B14DA1003F7F9B /* CoreDataStack.swift in Sources */,
 				A77A47B7279C2B21006BD5A2 /* AddStakeholderViewModel.swift in Sources */,
 				A77A47DD279C70EC006BD5A2 /* ImagePicker.swift in Sources */,
 				A77A47E7279C99EA006BD5A2 /* TabBarExtension.swift in Sources */,
+				A71EB63B27BD5D3C00F474A0 /* GetStakeholdersUseCase.swift in Sources */,
 				A76F92C927B14DA1003F7F9B /* DBManager.swift in Sources */,
 				A77A47D2279C6BDA006BD5A2 /* Project.swift in Sources */,
 			);
