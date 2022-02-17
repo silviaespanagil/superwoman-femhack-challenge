@@ -38,10 +38,6 @@ class AddStakeholderViewModel: ObservableObject {
     let alertText = "Please check the mail is right and that fundind is a valid number"
     let alertDismiss = "Close"
     
-    
-    // Stakeholders array
-    var stakeholders: [Stakeholder] = []
-    
     init() {
         
         let fundedProject = FundedProject(id: UUID(), name: "")
@@ -58,9 +54,7 @@ class AddStakeholderViewModel: ObservableObject {
             }
             
             presentAlert = false
-            
-            stakeholders.append(Stakeholder(id: UUID(), fullName: fullName, email: email, website: website, fundedProjects: fundedProjects, fundedAmount: Double(amountFunded)!))
-            
+            SaveStakeholderUseCase().execute(stakeholder: Stakeholder(id: UUID(), fullName: fullName, email: email, website: website, fundedProjects: fundedProjects, fundedAmount: Double(amountFunded)!))
             cleanValues()
         } else {
             
